@@ -1,0 +1,76 @@
+{
+  "app_id": "ittoolsdocker",
+  "title": "IT-Tools",
+  "image": "corentinth/it-tools:2024.10.22-7ca5933",
+  "repo_name": "it-tools",
+  "github_repo": "it-tools",
+  "mode": "wrapper",
+  "entrypoint_file": "specs/ittools-entrypoint.sh",
+  "wrapper_note": "the upstream image starts nginx as root on port 80; TOS forbids root containers,\nso this wrapper runs nginx as uid 1000 on port 8080 with pid, temp, log and cache\npaths under /tmp. The static files are served from the upstream /usr/share/nginx/html.\n",
+  "wrapper_note_readme": "- **Rootless nginx wrapper.** The image starts nginx as root on port 80; `src/entrypoint.sh` starts it as uid 1000 on port 8080 with `/tmp` pid/temp/log paths. The application files are unmodified.",
+  "container_port": 8080,
+  "host_port": 8027,
+  "category": [
+    "Utilities"
+  ],
+  "user": "1000:1000",
+  "volumes": [
+    {
+      "host": "/Volume1/DockerAppData/ittoolsdocker/data",
+      "container": "/data"
+    }
+  ],
+  "env": {
+    "TZ": "Asia/Shanghai"
+  },
+  "healthcheck": [
+    "CMD-SHELL",
+    "curl -s -o /dev/null http://127.0.0.1:8080/ || exit 1"
+  ],
+  "healthcheck_interval": "30s",
+  "healthcheck_timeout": "10s",
+  "healthcheck_retries": 3,
+  "healthcheck_start_period": "30s",
+  "auth": "CorentinTh",
+  "upstream_url": "https://github.com/CorentinTh/it-tools",
+  "upstream_license": "GPL-3.0",
+  "license": "GPL-3.0",
+  "descript": "IT-Tools is a collection of handy online tools for developers: token generators, encoders, converters, formatters, network and crypto utilities, and many more. Everything runs in the browser against a static web app, with no account and no server-side data. This package runs the official Docker Hub image as a non-root container.",
+  "release_note": "1. First release: IT-Tools 2024.10.22 from Docker Hub, x86_64 + aarch64, non-root.",
+  "important": "Open the web UI and use the tools directly; there is no login and no persistent data. The app is a static SPA, so the optional /data volume stays empty. Needs DockerEngine; add a registry mirror if Docker Hub is unreachable. Plain HTTP on the LAN; do not expose the published port to the internet without a TLS reverse proxy.",
+  "translations": {
+    "zh-cn": {
+      "descript": "IT-Tools 是一个开发者在线工具集合：令牌生成、编码解码、格式转换、网络与加密工具等。全部在浏览器里运行，静态网页应用，无需账号，也不在服务器保存数据。本应用使用 Docker Hub 官方镜像并以非 root 用户运行。",
+      "important": "打开网页即可使用，无需登录，也没有持久化数据；可选的 /data 卷会保持为空。需要 DockerEngine；无法访问 Docker Hub 时请先配置镜像加速。应用通过局域网 HTTP 访问，不要在没有 TLS 反代的情况下暴露到公网。",
+      "release_note": "1. 首个版本：IT-Tools 2024.10.22，来自 Docker Hub，x86_64 + aarch64 双包，非 root。"
+    },
+    "zh-hk": {
+      "descript": "IT-Tools 是一個開發者線上工具集合：權杖生成、編碼解碼、格式轉換、網路與加密工具等。全部在瀏覽器裡運行，靜態網頁應用，無需帳號，也不在伺服器保存資料。本應用使用 Docker Hub 官方鏡像並以非 root 使用者運行。",
+      "important": "開啟網頁即可使用，無需登入，也沒有持久化資料；可選的 /data 卷會保持為空。需要 DockerEngine；無法存取 Docker Hub 時請先設定鏡像加速。應用透過局域網 HTTP 存取，不要在沒有 TLS 反代的情況下暴露到公網。",
+      "release_note": "1. 首個版本：IT-Tools 2024.10.22，來自 Docker Hub，x86_64 + aarch64 雙包，非 root。"
+    }
+  },
+  "data_notes": "IT-Tools is a static single-page application. It has no database, no uploads and no server-side state; the optional `/data` mount is unused and can be ignored.",
+  "design_notes": [
+    "**Rootless nginx.** The upstream nginx runs as root on port 80; `src/entrypoint.sh` runs it as uid 1000 on 8080 with pid/temp/log paths under `/tmp`; the static files are unmodified.",
+    "**No persistence.** The app is a static SPA; there is nothing to back up.",
+    "**One port.** Only 8080 is published; no privileged mode, no host network, no Docker socket.",
+    "**Health check** probes `/` on 8080."
+  ],
+  "limitations": [
+    "No login and no server-side storage: do not use it for secrets that must be kept on the NAS.",
+    "Some browser features (clipboard, file APIs) depend on the browser and on HTTPS; over plain HTTP on the LAN some tools may be limited.",
+    "Plain HTTP on the LAN; do not expose the published port to the internet without a TLS reverse proxy."
+  ],
+  "runtime_files": [],
+  "official": "https://github.com/CorentinTh/it-tools",
+  "help": "https://github.com/Moechz/it-tools/issues",
+  "platform": "x86_64",
+  "publisher": "Moechz",
+  "compose_project": "ittoolsdocker",
+  "upstream_version": "2024.10.22",
+  "release_tag_prefix": "v",
+  "version": "2024.10.22-1",
+  "docker_socket": false,
+  "group_add": []
+}

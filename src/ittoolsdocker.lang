@@ -1,0 +1,195 @@
+# ===========================================================================
+# Multilingual file for the TOS 7 Docker application "ittoolsdocker".
+# File name MUST be: <appid>.lang.  23-language superset (14 required by TOS).
+# The App Center picks the text matching the user's device language;
+# untranslated nodes fall back to English, which the official guide allows.
+# Fields: name (app title), auth (upstream author), descript (up to 512
+# chars), release_note, important (up to 512 chars).
+# Translations come from tosapp.json "translations"; run
+#   tosdocker lang <app>          to re-render this file
+#   tosdocker translate <app>     to see what still needs translating
+# ===========================================================================
+[en-us]
+name         = "IT-Tools"
+auth         = "CorentinTh"
+version      = "@@VERSION@@"
+descript     = "IT-Tools is a collection of handy online tools for developers: token generators, encoders, converters, formatters, network and crypto utilities, and many more. Everything runs in the browser against a static web app, with no account and no server-side data. This package runs the official Docker Hub image as a non-root container."
+release_note = "1. First release: IT-Tools 2024.10.22 from Docker Hub, x86_64 + aarch64, non-root."
+important    = "Open the web UI and use the tools directly; there is no login and no persistent data. The app is a static SPA, so the optional /data volume stays empty. Needs DockerEngine; add a registry mirror if Docker Hub is unreachable. Plain HTTP on the LAN; do not expose the published port to the internet without a TLS reverse proxy."
+
+[zh-cn]
+name         = "IT-Tools"
+auth         = "CorentinTh"
+version      = "@@VERSION@@"
+descript     = "IT-Tools 是一个开发者在线工具集合：令牌生成、编码解码、格式转换、网络与加密工具等。全部在浏览器里运行，静态网页应用，无需账号，也不在服务器保存数据。本应用使用 Docker Hub 官方镜像并以非 root 用户运行。"
+release_note = "1. 首个版本：IT-Tools 2024.10.22，来自 Docker Hub，x86_64 + aarch64 双包，非 root。"
+important    = "打开网页即可使用，无需登录，也没有持久化数据；可选的 /data 卷会保持为空。需要 DockerEngine；无法访问 Docker Hub 时请先配置镜像加速。应用通过局域网 HTTP 访问，不要在没有 TLS 反代的情况下暴露到公网。"
+
+[zh-hk]
+name         = "IT-Tools"
+auth         = "CorentinTh"
+version      = "@@VERSION@@"
+descript     = "IT-Tools 是一個開發者線上工具集合：權杖生成、編碼解碼、格式轉換、網路與加密工具等。全部在瀏覽器裡運行，靜態網頁應用，無需帳號，也不在伺服器保存資料。本應用使用 Docker Hub 官方鏡像並以非 root 使用者運行。"
+release_note = "1. 首個版本：IT-Tools 2024.10.22，來自 Docker Hub，x86_64 + aarch64 雙包，非 root。"
+important    = "開啟網頁即可使用，無需登入，也沒有持久化資料；可選的 /data 卷會保持為空。需要 DockerEngine；無法存取 Docker Hub 時請先設定鏡像加速。應用透過局域網 HTTP 存取，不要在沒有 TLS 反代的情況下暴露到公網。"
+
+[fr-fr]
+name         = "IT-Tools"
+auth         = "CorentinTh"
+version      = "@@VERSION@@"
+descript     = "IT-Tools is a collection of handy online tools for developers: token generators, encoders, converters, formatters, network and crypto utilities, and many more. Everything runs in the browser against a static web app, with no account and no server-side data. This package runs the official Docker Hub image as a non-root container."
+release_note = "1. First release: IT-Tools 2024.10.22 from Docker Hub, x86_64 + aarch64, non-root."
+important    = "Open the web UI and use the tools directly; there is no login and no persistent data. The app is a static SPA, so the optional /data volume stays empty. Needs DockerEngine; add a registry mirror if Docker Hub is unreachable. Plain HTTP on the LAN; do not expose the published port to the internet without a TLS reverse proxy."
+
+[de-de]
+name         = "IT-Tools"
+auth         = "CorentinTh"
+version      = "@@VERSION@@"
+descript     = "IT-Tools is a collection of handy online tools for developers: token generators, encoders, converters, formatters, network and crypto utilities, and many more. Everything runs in the browser against a static web app, with no account and no server-side data. This package runs the official Docker Hub image as a non-root container."
+release_note = "1. First release: IT-Tools 2024.10.22 from Docker Hub, x86_64 + aarch64, non-root."
+important    = "Open the web UI and use the tools directly; there is no login and no persistent data. The app is a static SPA, so the optional /data volume stays empty. Needs DockerEngine; add a registry mirror if Docker Hub is unreachable. Plain HTTP on the LAN; do not expose the published port to the internet without a TLS reverse proxy."
+
+[it-it]
+name         = "IT-Tools"
+auth         = "CorentinTh"
+version      = "@@VERSION@@"
+descript     = "IT-Tools is a collection of handy online tools for developers: token generators, encoders, converters, formatters, network and crypto utilities, and many more. Everything runs in the browser against a static web app, with no account and no server-side data. This package runs the official Docker Hub image as a non-root container."
+release_note = "1. First release: IT-Tools 2024.10.22 from Docker Hub, x86_64 + aarch64, non-root."
+important    = "Open the web UI and use the tools directly; there is no login and no persistent data. The app is a static SPA, so the optional /data volume stays empty. Needs DockerEngine; add a registry mirror if Docker Hub is unreachable. Plain HTTP on the LAN; do not expose the published port to the internet without a TLS reverse proxy."
+
+[es-es]
+name         = "IT-Tools"
+auth         = "CorentinTh"
+version      = "@@VERSION@@"
+descript     = "IT-Tools is a collection of handy online tools for developers: token generators, encoders, converters, formatters, network and crypto utilities, and many more. Everything runs in the browser against a static web app, with no account and no server-side data. This package runs the official Docker Hub image as a non-root container."
+release_note = "1. First release: IT-Tools 2024.10.22 from Docker Hub, x86_64 + aarch64, non-root."
+important    = "Open the web UI and use the tools directly; there is no login and no persistent data. The app is a static SPA, so the optional /data volume stays empty. Needs DockerEngine; add a registry mirror if Docker Hub is unreachable. Plain HTTP on the LAN; do not expose the published port to the internet without a TLS reverse proxy."
+
+[hu-hu]
+name         = "IT-Tools"
+auth         = "CorentinTh"
+version      = "@@VERSION@@"
+descript     = "IT-Tools is a collection of handy online tools for developers: token generators, encoders, converters, formatters, network and crypto utilities, and many more. Everything runs in the browser against a static web app, with no account and no server-side data. This package runs the official Docker Hub image as a non-root container."
+release_note = "1. First release: IT-Tools 2024.10.22 from Docker Hub, x86_64 + aarch64, non-root."
+important    = "Open the web UI and use the tools directly; there is no login and no persistent data. The app is a static SPA, so the optional /data volume stays empty. Needs DockerEngine; add a registry mirror if Docker Hub is unreachable. Plain HTTP on the LAN; do not expose the published port to the internet without a TLS reverse proxy."
+
+[ja-jp]
+name         = "IT-Tools"
+auth         = "CorentinTh"
+version      = "@@VERSION@@"
+descript     = "IT-Tools is a collection of handy online tools for developers: token generators, encoders, converters, formatters, network and crypto utilities, and many more. Everything runs in the browser against a static web app, with no account and no server-side data. This package runs the official Docker Hub image as a non-root container."
+release_note = "1. First release: IT-Tools 2024.10.22 from Docker Hub, x86_64 + aarch64, non-root."
+important    = "Open the web UI and use the tools directly; there is no login and no persistent data. The app is a static SPA, so the optional /data volume stays empty. Needs DockerEngine; add a registry mirror if Docker Hub is unreachable. Plain HTTP on the LAN; do not expose the published port to the internet without a TLS reverse proxy."
+
+[ko-kr]
+name         = "IT-Tools"
+auth         = "CorentinTh"
+version      = "@@VERSION@@"
+descript     = "IT-Tools is a collection of handy online tools for developers: token generators, encoders, converters, formatters, network and crypto utilities, and many more. Everything runs in the browser against a static web app, with no account and no server-side data. This package runs the official Docker Hub image as a non-root container."
+release_note = "1. First release: IT-Tools 2024.10.22 from Docker Hub, x86_64 + aarch64, non-root."
+important    = "Open the web UI and use the tools directly; there is no login and no persistent data. The app is a static SPA, so the optional /data volume stays empty. Needs DockerEngine; add a registry mirror if Docker Hub is unreachable. Plain HTTP on the LAN; do not expose the published port to the internet without a TLS reverse proxy."
+
+[pl-pl]
+name         = "IT-Tools"
+auth         = "CorentinTh"
+version      = "@@VERSION@@"
+descript     = "IT-Tools is a collection of handy online tools for developers: token generators, encoders, converters, formatters, network and crypto utilities, and many more. Everything runs in the browser against a static web app, with no account and no server-side data. This package runs the official Docker Hub image as a non-root container."
+release_note = "1. First release: IT-Tools 2024.10.22 from Docker Hub, x86_64 + aarch64, non-root."
+important    = "Open the web UI and use the tools directly; there is no login and no persistent data. The app is a static SPA, so the optional /data volume stays empty. Needs DockerEngine; add a registry mirror if Docker Hub is unreachable. Plain HTTP on the LAN; do not expose the published port to the internet without a TLS reverse proxy."
+
+[ru-ru]
+name         = "IT-Tools"
+auth         = "CorentinTh"
+version      = "@@VERSION@@"
+descript     = "IT-Tools is a collection of handy online tools for developers: token generators, encoders, converters, formatters, network and crypto utilities, and many more. Everything runs in the browser against a static web app, with no account and no server-side data. This package runs the official Docker Hub image as a non-root container."
+release_note = "1. First release: IT-Tools 2024.10.22 from Docker Hub, x86_64 + aarch64, non-root."
+important    = "Open the web UI and use the tools directly; there is no login and no persistent data. The app is a static SPA, so the optional /data volume stays empty. Needs DockerEngine; add a registry mirror if Docker Hub is unreachable. Plain HTTP on the LAN; do not expose the published port to the internet without a TLS reverse proxy."
+
+[tr-tr]
+name         = "IT-Tools"
+auth         = "CorentinTh"
+version      = "@@VERSION@@"
+descript     = "IT-Tools is a collection of handy online tools for developers: token generators, encoders, converters, formatters, network and crypto utilities, and many more. Everything runs in the browser against a static web app, with no account and no server-side data. This package runs the official Docker Hub image as a non-root container."
+release_note = "1. First release: IT-Tools 2024.10.22 from Docker Hub, x86_64 + aarch64, non-root."
+important    = "Open the web UI and use the tools directly; there is no login and no persistent data. The app is a static SPA, so the optional /data volume stays empty. Needs DockerEngine; add a registry mirror if Docker Hub is unreachable. Plain HTTP on the LAN; do not expose the published port to the internet without a TLS reverse proxy."
+
+[pt-pt]
+name         = "IT-Tools"
+auth         = "CorentinTh"
+version      = "@@VERSION@@"
+descript     = "IT-Tools is a collection of handy online tools for developers: token generators, encoders, converters, formatters, network and crypto utilities, and many more. Everything runs in the browser against a static web app, with no account and no server-side data. This package runs the official Docker Hub image as a non-root container."
+release_note = "1. First release: IT-Tools 2024.10.22 from Docker Hub, x86_64 + aarch64, non-root."
+important    = "Open the web UI and use the tools directly; there is no login and no persistent data. The app is a static SPA, so the optional /data volume stays empty. Needs DockerEngine; add a registry mirror if Docker Hub is unreachable. Plain HTTP on the LAN; do not expose the published port to the internet without a TLS reverse proxy."
+
+[ar-sa]
+name         = "IT-Tools"
+auth         = "CorentinTh"
+version      = "@@VERSION@@"
+descript     = "IT-Tools is a collection of handy online tools for developers: token generators, encoders, converters, formatters, network and crypto utilities, and many more. Everything runs in the browser against a static web app, with no account and no server-side data. This package runs the official Docker Hub image as a non-root container."
+release_note = "1. First release: IT-Tools 2024.10.22 from Docker Hub, x86_64 + aarch64, non-root."
+important    = "Open the web UI and use the tools directly; there is no login and no persistent data. The app is a static SPA, so the optional /data volume stays empty. Needs DockerEngine; add a registry mirror if Docker Hub is unreachable. Plain HTTP on the LAN; do not expose the published port to the internet without a TLS reverse proxy."
+
+[cs-cz]
+name         = "IT-Tools"
+auth         = "CorentinTh"
+version      = "@@VERSION@@"
+descript     = "IT-Tools is a collection of handy online tools for developers: token generators, encoders, converters, formatters, network and crypto utilities, and many more. Everything runs in the browser against a static web app, with no account and no server-side data. This package runs the official Docker Hub image as a non-root container."
+release_note = "1. First release: IT-Tools 2024.10.22 from Docker Hub, x86_64 + aarch64, non-root."
+important    = "Open the web UI and use the tools directly; there is no login and no persistent data. The app is a static SPA, so the optional /data volume stays empty. Needs DockerEngine; add a registry mirror if Docker Hub is unreachable. Plain HTTP on the LAN; do not expose the published port to the internet without a TLS reverse proxy."
+
+[he-il]
+name         = "IT-Tools"
+auth         = "CorentinTh"
+version      = "@@VERSION@@"
+descript     = "IT-Tools is a collection of handy online tools for developers: token generators, encoders, converters, formatters, network and crypto utilities, and many more. Everything runs in the browser against a static web app, with no account and no server-side data. This package runs the official Docker Hub image as a non-root container."
+release_note = "1. First release: IT-Tools 2024.10.22 from Docker Hub, x86_64 + aarch64, non-root."
+important    = "Open the web UI and use the tools directly; there is no login and no persistent data. The app is a static SPA, so the optional /data volume stays empty. Needs DockerEngine; add a registry mirror if Docker Hub is unreachable. Plain HTTP on the LAN; do not expose the published port to the internet without a TLS reverse proxy."
+
+[id-id]
+name         = "IT-Tools"
+auth         = "CorentinTh"
+version      = "@@VERSION@@"
+descript     = "IT-Tools is a collection of handy online tools for developers: token generators, encoders, converters, formatters, network and crypto utilities, and many more. Everything runs in the browser against a static web app, with no account and no server-side data. This package runs the official Docker Hub image as a non-root container."
+release_note = "1. First release: IT-Tools 2024.10.22 from Docker Hub, x86_64 + aarch64, non-root."
+important    = "Open the web UI and use the tools directly; there is no login and no persistent data. The app is a static SPA, so the optional /data volume stays empty. Needs DockerEngine; add a registry mirror if Docker Hub is unreachable. Plain HTTP on the LAN; do not expose the published port to the internet without a TLS reverse proxy."
+
+[nb-no]
+name         = "IT-Tools"
+auth         = "CorentinTh"
+version      = "@@VERSION@@"
+descript     = "IT-Tools is a collection of handy online tools for developers: token generators, encoders, converters, formatters, network and crypto utilities, and many more. Everything runs in the browser against a static web app, with no account and no server-side data. This package runs the official Docker Hub image as a non-root container."
+release_note = "1. First release: IT-Tools 2024.10.22 from Docker Hub, x86_64 + aarch64, non-root."
+important    = "Open the web UI and use the tools directly; there is no login and no persistent data. The app is a static SPA, so the optional /data volume stays empty. Needs DockerEngine; add a registry mirror if Docker Hub is unreachable. Plain HTTP on the LAN; do not expose the published port to the internet without a TLS reverse proxy."
+
+[nl-nl]
+name         = "IT-Tools"
+auth         = "CorentinTh"
+version      = "@@VERSION@@"
+descript     = "IT-Tools is a collection of handy online tools for developers: token generators, encoders, converters, formatters, network and crypto utilities, and many more. Everything runs in the browser against a static web app, with no account and no server-side data. This package runs the official Docker Hub image as a non-root container."
+release_note = "1. First release: IT-Tools 2024.10.22 from Docker Hub, x86_64 + aarch64, non-root."
+important    = "Open the web UI and use the tools directly; there is no login and no persistent data. The app is a static SPA, so the optional /data volume stays empty. Needs DockerEngine; add a registry mirror if Docker Hub is unreachable. Plain HTTP on the LAN; do not expose the published port to the internet without a TLS reverse proxy."
+
+[sv-se]
+name         = "IT-Tools"
+auth         = "CorentinTh"
+version      = "@@VERSION@@"
+descript     = "IT-Tools is a collection of handy online tools for developers: token generators, encoders, converters, formatters, network and crypto utilities, and many more. Everything runs in the browser against a static web app, with no account and no server-side data. This package runs the official Docker Hub image as a non-root container."
+release_note = "1. First release: IT-Tools 2024.10.22 from Docker Hub, x86_64 + aarch64, non-root."
+important    = "Open the web UI and use the tools directly; there is no login and no persistent data. The app is a static SPA, so the optional /data volume stays empty. Needs DockerEngine; add a registry mirror if Docker Hub is unreachable. Plain HTTP on the LAN; do not expose the published port to the internet without a TLS reverse proxy."
+
+[th-th]
+name         = "IT-Tools"
+auth         = "CorentinTh"
+version      = "@@VERSION@@"
+descript     = "IT-Tools is a collection of handy online tools for developers: token generators, encoders, converters, formatters, network and crypto utilities, and many more. Everything runs in the browser against a static web app, with no account and no server-side data. This package runs the official Docker Hub image as a non-root container."
+release_note = "1. First release: IT-Tools 2024.10.22 from Docker Hub, x86_64 + aarch64, non-root."
+important    = "Open the web UI and use the tools directly; there is no login and no persistent data. The app is a static SPA, so the optional /data volume stays empty. Needs DockerEngine; add a registry mirror if Docker Hub is unreachable. Plain HTTP on the LAN; do not expose the published port to the internet without a TLS reverse proxy."
+
+[vi-vn]
+name         = "IT-Tools"
+auth         = "CorentinTh"
+version      = "@@VERSION@@"
+descript     = "IT-Tools is a collection of handy online tools for developers: token generators, encoders, converters, formatters, network and crypto utilities, and many more. Everything runs in the browser against a static web app, with no account and no server-side data. This package runs the official Docker Hub image as a non-root container."
+release_note = "1. First release: IT-Tools 2024.10.22 from Docker Hub, x86_64 + aarch64, non-root."
+important    = "Open the web UI and use the tools directly; there is no login and no persistent data. The app is a static SPA, so the optional /data volume stays empty. Needs DockerEngine; add a registry mirror if Docker Hub is unreachable. Plain HTTP on the LAN; do not expose the published port to the internet without a TLS reverse proxy."
+
